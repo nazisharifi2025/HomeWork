@@ -180,6 +180,9 @@
   .top-16 {
     top: calc(var(--spacing) * 16);
   }
+  .top-22 {
+    top: calc(var(--spacing) * 22);
+  }
   .top-24 {
     top: calc(var(--spacing) * 24);
   }
@@ -242,6 +245,9 @@
   }
   .left-\[40\%\] {
     left: 40%;
+  }
+  .left-\[41\%\] {
+    left: 41%;
   }
   .left-\[42\%\] {
     left: 42%;
