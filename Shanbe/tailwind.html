@@ -36,7 +36,7 @@
       function addTask() {
         const Work = prompt("لطفا کار های تان را وارد کنید!");
         if (Work && Work.trim() !== "") {
-          tasks.push(tasks);
+          tasks.push(Work);
           for (let n = 0; n < tasks.length; n++) {
             const li = document.createElement("li");
             li.textContent = tasks[n];
