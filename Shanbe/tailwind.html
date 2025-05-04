@@ -39,6 +39,8 @@
           tasks.push(tasks);
           for (let n = 0; n < tasks.length; n++) {
             const li = document.createElement("li");
+            li.textContent = tasks[n];
+            taskList.appendChild(li);
           }
         }
       }
