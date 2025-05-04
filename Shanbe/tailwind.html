@@ -42,6 +42,11 @@
             li.textContent = tasks[n];
             taskList.appendChild(li);
           }
+          if (tasks.length > 5) {
+            document.getElementById("warning").classList.remove("hidden");
+          } else {
+            document.getElementById("warning").classList.add("hidden");
+          }
         }
       }
     </script>
