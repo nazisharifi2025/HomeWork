@@ -41,6 +41,11 @@
             li.textContent = Text[b];
             taskList.appendChild(li);
           }
+          if (arr.length > 5) {
+            document.getElementById("warning").classList.remove("hidden");
+          } else {
+            document.getElementById("warning").classList.add("hidden");
+          }
         }
       }
       // لیست ذخیره‌ی کارها
