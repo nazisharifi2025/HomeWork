@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>لیست کارهای من</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded p-6 w-full max-w-md">
+      <h1 class="text-xl font-bold text-center mb-4">📝 لیست کارهای روزانه</h1>
+
+      <!-- دکمه افزودن کار جدید -->
+      <button
+        onclick="addTask()"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mb-4 w-full"
+      >
+        افزودن کار جدید
+      </button>
+
+      <!-- پیام هشدار -->
+      <p id="warning" class="text-red-500 text-center mb-4 hidden">
+        ⚠️ زیاد کار داری، یه کم استراحت کن!
+      </p>
+
+      <!-- لیست کارها -->
+      <ul id="taskList" class="list-decimal list-inside space-y-2 text-right">
+        <!-- اینجا با جاوااسکریپت پر می‌شه -->
+      </ul>
+    </div>
+
+    <script>
+      // لیست ذخیره‌ی کارها
+      const tasks = [];
+
+      function addTask() {
+        const Work
+      }
+    </script>
+    <!-- // TODO: از کاربر با prompt یک کار بگیر -->
+    <!-- // TODO: بررسی کن که رشته خالی نباشه (با trim و if) -->
+    <!-- // TODO: مقدار رو به آرایه tasks اضافه کن -->
+    <!-- // TODO: لیست را دوباره با loop بساز (با innerHTML) -->
+    <!-- // TODO: اگر تعداد کارها > 5 بود، پیام هشدار را نشان بده -->
+    <!--  -->
+  </body>
+</html>
