@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../src/output.css"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded p-6 w-full max-w-md">
+      <h1 class="text-xl font-bold text-center mb-4">📝 لیست کارهای روزانه</h1>
+
+      <button
+        onclick="addText()"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mb-4 w-full"
+      >
+        افزودن کار جدید
+      </button>
+
+      <p id="warning" class="text-red-500 text-center mb-4 hidden">
+        ⚠️ زیاد کار داری، یه کم استراحت کن!
+      </p>
+
+      <!-- لیست کارها -->
+      <ul id="taskList" class="list-decimal list-inside space-y-2 text-right">
+        <!-- اینجا با جاوااسکریپت پر می‌شه -->
+      </ul>
+    </div>
+
+    <script>
+      const arr = [];
+      const taskList = document.getElementById("taskList");
+      function addText() {
+        const Text = prompt("Enter your Works!");
+        if (Text && Text.trim() !== "") {
+          arr.push(Text);
+          taskList.innerHTML = "";
+          for (let b = 0; b < arr.length; b++) {
+            const li = document.createElement("li");
+            li.textContent = arr[b];
+            taskList.appendChild(li);
+          }
+          if (arr.length > 5) {
+            document.getElementById("warning").classList.remove("hidden");
+          } else {
+            document.getElementById("warning").classList.add("hidden");
+          }
+        }
+      }
+    </script>
+    <!-- // TODO: از کاربر با prompt یک کار بگیر -->
+    <!-- // TODO: بررسی کن که رشته خالی نباشه (با trim و if) -->
+    <!-- // TODO: مقدار رو به آرایه tasks اضافه کن -->
+    <!-- // TODO: لیست را دوباره با loop بساز (با innerHTML) -->
+    <!-- // TODO: اگر تعداد کارها > 5 بود، پیام هشدار را نشان بده -->
+    <!--  -->
+  </body>
+</html>
