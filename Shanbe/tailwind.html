@@ -31,9 +31,16 @@
     <script>
       // لیست ذخیره‌ی کارها
       const tasks = [];
-
+      const taskList = document.getElementById("taskList");
+      taskList.innerHTML = "";
       function addTask() {
-        const Work
+        const Work = prompt("لطفا کار های تان را وارد کنید!");
+        if (Work && Work.trim() !== "") {
+          tasks.push(tasks);
+          for (let n = 0; n < tasks.length; n++) {
+            const li = document.createElement("li");
+          }
+        }
       }
     </script>
     <!-- // TODO: از کاربر با prompt یک کار بگیر -->
