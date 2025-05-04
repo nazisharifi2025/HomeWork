@@ -32,11 +32,11 @@
       // لیست ذخیره‌ی کارها
       const tasks = [];
       const taskList = document.getElementById("taskList");
-      taskList.innerHTML = "";
       function addTask() {
         const Work = prompt("لطفا کار های تان را وارد کنید!");
         if (Work && Work.trim() !== "") {
           tasks.push(Work);
+          taskList.innerHTML = "";
           for (let n = 0; n < tasks.length; n++) {
             const li = document.createElement("li");
             li.textContent = tasks[n];
