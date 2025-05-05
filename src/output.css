@@ -962,6 +962,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-gray-400 {
+    border-color: var(--color-gray-400);
+  }
   .border-slate-100 {
     border-color: var(--color-slate-100);
   }
