@@ -414,6 +414,9 @@
   .order-last {
     order: 9999;
   }
+  .float-right {
+    float: right;
+  }
   .-mx-4 {
     margin-inline: calc(var(--spacing) * -4);
   }
@@ -443,6 +446,9 @@
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
@@ -559,6 +565,9 @@
   .h-36 {
     height: calc(var(--spacing) * 36);
   }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
   .h-\[0\.58em\] {
     height: 0.58em;
   }
@@ -636,6 +645,24 @@
   }
   .w-\[52\.75rem\] {
     width: 52.75rem;
+  }
+  .w-\[60\%\] {
+    width: 60%;
+  }
+  .w-\[70\%\] {
+    width: 70%;
+  }
+  .w-\[75\%\] {
+    width: 75%;
+  }
+  .w-\[76\%\] {
+    width: 76%;
+  }
+  .w-\[77\%\] {
+    width: 77%;
+  }
+  .w-\[78\%\] {
+    width: 78%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -1159,6 +1186,10 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
