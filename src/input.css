@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@theme {
+  --color-bgcon: rgba(255, 255, 255, 0.3);
+  --color-bgfi: rgba(255, 255, 255, 0.1);
+}
+@layer components {
+  .bg-clip-path {
+    clip-path: inset(0 0 0 0 round 5% 20% 0 10%);
+  }
+}
