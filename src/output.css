@@ -342,6 +342,15 @@
   .top-40 {
     top: calc(var(--spacing) * 40);
   }
+  .top-48 {
+    top: calc(var(--spacing) * 48);
+  }
+  .top-52 {
+    top: calc(var(--spacing) * 52);
+  }
+  .top-56 {
+    top: calc(var(--spacing) * 56);
+  }
   .top-\[-6\.5rem\] {
     top: -6.5rem;
   }
