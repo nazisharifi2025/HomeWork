@@ -605,6 +605,9 @@
   .h-\[120vh\] {
     height: 120vh;
   }
+  .h-\[140vh\] {
+    height: 140vh;
+  }
   .h-\[200px\] {
     height: 200px;
   }
@@ -798,6 +801,12 @@
   }
   .rotate-90 {
     rotate: 90deg;
+  }
+  .rotate-180 {
+    rotate: 180deg;
+  }
+  .rotate-\[360deg\] {
+    rotate: 360deg;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -1322,6 +1331,9 @@
   .text-blue-600 {
     color: var(--color-blue-600);
   }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
   .text-gray-600 {
     color: var(--color-gray-600);
   }
@@ -1370,6 +1382,9 @@
   }
   .opacity-0 {
     opacity: 0%;
+  }
+  .opacity-1 {
+    opacity: 1%;
   }
   .opacity-60 {
     opacity: 60%;
@@ -1556,6 +1571,13 @@
     &:hover {
       @media (hover: hover) {
         rotate: 360deg;
+      }
+    }
+  }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
       }
     }
   }

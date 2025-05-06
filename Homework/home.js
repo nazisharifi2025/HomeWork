@@ -9,3 +9,21 @@ mob.addEventListener("click", () => {
   mobail.classList.remove("hidden");
   compiuter.classList.add("hidden");
 });
+com.addEventListener("click", () => {
+  compiuter.classList.remove("hidden");
+  mobail.classList.add("hidden");
+});
+menu.addEventListener("click", () => {
+  block.classList.remove("hidden");
+  block.classList.add("flex");
+  menu.style.display = "none";
+  close.style.display = "block";
+  close.style.opacity = "1";
+});
+close.addEventListener("click", () => {
+  block.classList.add("hidden");
+  block.classList.remove("flex");
+  menu.style.display = "block";
+  close.style.display = "none";
+  close.style.opacity = "0";
+});

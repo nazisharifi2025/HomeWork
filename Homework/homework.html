@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <script src="home.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 h-[80vh]">
     <div class="text-4xl h-20 w-full bg-gray-400  flex justify-center space-x-5 items-center">
-      <span id="mob" class="material-symbols-outlined" style="font-size: 45px;">
+      <span id="mob" class="material-symbols-outlined hover:cursor-pointer" style="font-size: 45px;">
         smartphone
         </span>
-        <span id="com" class="material-symbols-outlined" style="font-size: 45px;">
+        <span id="com" class="material-symbols-outlined hover:cursor-pointer" style="font-size: 45px;">
           desktop_windows
           </span>
     </div>
     <div id="Cumpioter"
-      class="bg-white rounded-2xl h-[90vh] relative overflow-y-scroll w-[90%] mx-auto mt-12"
+      class="bg-white rounded-2xl h-[90vh] relative overflow-y-scroll w-[90%] mx-auto mt-5"
     >
       <div
         class="flex justify-between w-[90%] mx-auto mt-6 h-24 px-9 py-9 rounded-2xl"
@@ -97,13 +98,13 @@
     <!-- Computer Ended -->
      <!-- Mobail Started -->
      <div id="Mobail"
-     class="bg-white rounded-2xl h-[90vh] hidden relative overflow-y-scroll w-[640px] mx-auto  mt-28"
+     class="bg-white rounded-2xl h-[80vh] hidden relative overflow-y-scroll w-[640px] mx-auto  mt-5"
    >
      <div
        class="flex justify-between w-[90%] mx-auto mt-6 h-24 px-9 py-9 rounded-2xl"
      >
        <div class="flex space-x-4">
-         <span
+         <span id="rotate"
            class="material-symbols-outlined rotate-90 text-blue-500 mt-6"
            style="font-size: 35px"
          >
@@ -113,7 +114,7 @@
            <h1 class="text-3xl text-black">Tax</h1>
            <h1 class="text-3xl text-blue-400">Pal</h1>
          </div>
-         <ul id="block" class=" flex-col hidden bg-gray-200 px-4 py-4 text-2xl rounded-2xl h-[200px] w-[70%] absolute top-24 z-50 mt-3">
+         <ul id="block" class=" flex-col hidden bg-gray-200 px-4 text-gray-400 py-4 text-2xl rounded-2xl h-[200px] w-[70%] absolute top-24 z-50 mt-12">
            <li>Features</li>
            <li>Testimonials</li>
            <li>Pricing</li>
@@ -124,10 +125,10 @@
          <button class="h-12 w-48 bg-blue-500 rounded-full">
            Get Started ToDay
          </button>
-         <span id="menu" class="material-symbols-outlined mt-2" style="font-size: 34px;">
+         <span id="menu" class="material-symbols-outlined mt-2 hover:cursor-pointer" style="font-size: 34px;">
           menu
           </span>
-          <span id="close" class="material-symbols-outlined hidden opacity-0 mt-2"  style="font-size: 34px;">
+          <span id="close" class="material-symbols-outlined hidden opacity-0 mt-2 hover:cursor-pointer"  style="font-size: 34px;">
             close
             </span>
        </div>
