@@ -8,4 +8,7 @@
   .bg-clip-path {
     clip-path: inset(0 0 0 0 round 5% 20% 0 10%);
   }
+  .h1 {
+    @apply h-screen w-full bg-pink-200 text-4xl text-center;
+  }
 }
