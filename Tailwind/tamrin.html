@@ -15,6 +15,15 @@
     <script>
       const text =
         "  Every struggle in your life has shaped you into the person . You are today . Be thankful for the hard times , they have made you STRONGER";
+      let index = 0;
+      function types() {
+        if (index < text.length) {
+          document.getElementById("type").textContent += text.charAt(index);
+          index++;
+          setTimeout(types, 135);
+        }
+      }
+      types();
     </script>
   </body>
 </html>
