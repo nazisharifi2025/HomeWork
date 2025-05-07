@@ -12,14 +12,36 @@
   </head>
   <body>
     <div
-      class="h-[170vh] w-[90%] pt-8 mt-11 rounded-2xl mx-auto bg-radial from-pink-100 via-stone-200 to-gray-50"
+      class="h-[120vh] w-[90%] pt-8 mt-11 rounded-2xl flex flex-col gap-24 mx-auto bg-radial from-pink-100 via-stone-200 to-gray-50"
     >
       <nav
         class="h-20 w-[90%] flex space-x-5 mx-12 bg-linear-to-tr justify-between"
       >
         <img src="../poblic/img/mark.svg" class="h-16 w-16" alt="" />
-        <div class="flex justify-between w-[65%]">
-          <ul class="flex space-x-8">
+        <span
+          id="menu"
+          class="material-symbols-outlined hover:cursor-pointer"
+          style="font-size: 32px"
+        >
+          menu
+        </span>
+        <div
+          id="nav"
+          class="lg:justify-between lg:flex-row flex-col lg:bg-transparent w-[40%] hidden h-full lg:relative border absolute right-[46px] lg:top-0 lg:right-0 border-gray-300 rounded-2xl rounded-l-none lg:border-0 gap-12 lg:gap-0 top-[43px] bg-white lg:w-[65%]"
+        >
+          <ul
+            class="flex lg:flex-row flex-col space-x-8 gap-7 text-gray-600 lg:text-black lg:gap-0 border-b pb-12 lg:border-b-0 lg:pb-0"
+          >
+            <div class="flex w-full justify-between px-5 lg:hidden">
+              <img src="../poblic/img/mark.svg" class="h-14 w-14" alt="" />
+              <span
+                id="close"
+                class="material-symbols-outlined hover:cursor-pointer"
+                style="font-size: 30px"
+              >
+                close
+              </span>
+            </div>
             <li class="font-bold">Product</li>
             <li class="font-bold">Features</li>
             <li class="font-bold">Marketplace</li>
@@ -27,14 +49,17 @@
           </ul>
           <h2 class="font-bold">
             Login
-            <span class="material-symbols-outlined" style="font-size: 19px">
+            <span
+              class="material-symbols-outlined hover:cursor-pointer"
+              style="font-size: 19px"
+            >
               arrow_forward
             </span>
           </h2>
         </div>
       </nav>
       <div
-        class="w-[60%] mx-auto text-center flex flex-col items-center justify-center h-[60vh]"
+        class="w-[60%] mx-auto text-center flex flex-col gap-14 items-center justify-center h-[80vh]"
       >
         <button class="h-10 w-[60%] border rounded-full">
           Announcing our next round of funding. Read more →
@@ -42,10 +67,16 @@
         <h1 class="text-7xl font-bold text-center">
           Data to enrich your online business
         </h1>
-        <p>
+        <p class="text-gray-500 text-center text-[23px]">
           Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
           cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
         </p>
+        <div class="flex space-x-3">
+          <button class="h-10 w-28 rounded-sm bg-blue-400">Get started</button>
+          <button class="h-10 w-28 rounded-sm bg-transparent">
+            Learn more →
+          </button>
+        </div>
       </div>
     </div>
   </body>
