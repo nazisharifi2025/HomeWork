@@ -642,6 +642,9 @@
   .h-\[1em\] {
     height: 1em;
   }
+  .h-\[60vh\] {
+    height: 60vh;
+  }
   .h-\[70vh\] {
     height: 70vh;
   }
