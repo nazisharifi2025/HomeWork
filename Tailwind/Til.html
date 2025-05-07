@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div
-      class="h-[170vh] w-[90%] bg-linear-180 pt-8 from-pink-200 mt-8 rounded-2xl to-gray-100 from-5% mx-auto to-65%"
+      class="h-[170vh] w-[90%] pt-8 mt-11 rounded-2xl mx-auto bg-radial from-pink-100 via-stone-200 to-gray-50"
     >
-      <nav class="h-20 w-[90%] flex space-x-5 mx-12 leading-20 justify-between">
+      <nav
+        class="h-20 w-[90%] flex space-x-5 mx-12 bg-linear-to-tr justify-between"
+      >
         <img src="../poblic/img/mark.svg" class="h-16 w-16" alt="" />
-        <ul class="flex space-x-8">
-          <li class="font-bold">Product</li>
-          <li class="font-bold">Features</li>
-          <li class="font-bold">Marketplace</li>
-          <li class="font-bold">Company</li>
-        </ul>
-        <h2 class="font-bold">Login</h2>
+        <div class="flex justify-between w-[65%]">
+          <ul class="flex space-x-8">
+            <li class="font-bold">Product</li>
+            <li class="font-bold">Features</li>
+            <li class="font-bold">Marketplace</li>
+            <li class="font-bold">Company</li>
+          </ul>
+          <h2 class="font-bold">
+            Login
+            <span class="material-symbols-outlined" style="font-size: 19px">
+              arrow_forward
+            </span>
+          </h2>
+        </div>
       </nav>
+      <div class="w-[60%] mx-auto text-center">
+        <button class="h-10 w-[60%] border rounded-full">
+          Announcing our next round of funding. Read more →
+        </button>
+      </div>
     </div>
   </body>
 </html>
