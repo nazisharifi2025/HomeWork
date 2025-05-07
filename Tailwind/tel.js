@@ -12,7 +12,7 @@ close.addEventListener("click", () => {
   close.classList.add("hidden");
 });
 // text
-const text = ["Online", "Offline"];
+const text = ["Online", "Offline", "nazi "];
 let index = 0;
 setInterval(() => {
   document.getElementById("text").textContent = text[index];
