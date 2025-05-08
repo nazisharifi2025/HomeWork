@@ -1230,9 +1230,6 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
-  }
   .px-3\.5 {
     padding-inline: calc(var(--spacing) * 3.5);
   }
@@ -1244,6 +1241,9 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .px-9 {
     padding-inline: calc(var(--spacing) * 9);
@@ -1524,6 +1524,12 @@
       --tw-shadow-color: color-mix(in oklab, var(--color-gray-400) var(--tw-shadow-alpha), transparent);
     }
   }
+  .shadow-red-400 {
+    --tw-shadow-color: oklch(70.4% 0.191 22.216);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-red-400) var(--tw-shadow-alpha), transparent);
+    }
+  }
   .shadow-slate-900\/5 {
     --tw-shadow-color: color-mix(in srgb, oklch(20.8% 0.042 265.755) 5%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1534,6 +1540,12 @@
     --tw-shadow-color: color-mix(in srgb, oklch(20.8% 0.042 265.755) 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-slate-900) 10%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .shadow-white {
+    --tw-shadow-color: #fff;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-white) var(--tw-shadow-alpha), transparent);
     }
   }
   .ring-slate-200 {
