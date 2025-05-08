@@ -3,45 +3,58 @@ const clickbtn = document.getElementById("clickbtn");
 const input = document.getElementById("input");
 const todo = [];
 let editIndex = -1;
+
 clickbtn.addEventListener("click", () => {
-  const value = input.value.trime();
+  const value = input.value.trim();
   if (value === "") return;
-  if (editBtn === -1) {
+
+  if (editIndex === -1) {
     todo.push(value);
   } else {
-    todo[editBtn] = value;
-    editBtn = -1;
+    todo[editIndex] = value;
+    editIndex = -1;
   }
+
   input.value = "";
+  renderTodos();
 });
+
 function renderTodos() {
   divs.classList.remove("hidden");
   divs.classList.add("flex");
   divs.innerHTML = "";
+
   todo.forEach((item, index) => {
-    const h1 = document.createEvent("h1");
+    const h1 = document.createElement("h1");
     h1.classList.add("h1-js");
     h1.textContent = item;
 
-    const edeitbtn = document.createElement("butten");
-    edeitbtn.textContent = "✏️ Edit";
-    edeitbtn.classList.add("btn");
-    edeitbtn.addEventListener("click", () => {
+    // دکمه ویرایش
+    const editBtn = document.createElement("button");
+    editBtn.textContent = "✏️ Edit";
+    editBtn.classList.add("btn");
+    editBtn.addEventListener("click", () => {
       input.value = item;
       editIndex = index;
     });
-    const deldtbtn = document.createElement("butten");
-    deldtbtn.textContent = "🗑️ Delete";
-    deldtbtn.classList.add("btn2");
-    deldtbtn.addEventListener("click", () => {
+
+    // دکمه حذف
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "🗑️ Delete";
+    deleteBtn.classList.add("btn2");
+    deleteBtn.addEventListener("click", () => {
       todo.splice(index, 1);
-      renderTodos();
+      renderTodos(); // بازسازی لیست بعد از حذف
     });
-    const contener = document.createElement("div");
+
+    // ایجاد container برای هر آیتم
+    const container = document.createElement("div");
     container.style.marginBottom = "10px";
-    contener.appendChild(edeitbtn);
-    contener.appendChild(deldtbtn);
-    contener.appendChild(h1);
-    divs.appendChild(contener);
+    container.appendChild(h1);
+    container.appendChild(editBtn);
+    container.appendChild(deleteBtn);
+
+    // اضافه کردن container به divs
+    divs.appendChild(container);
   });
 }
