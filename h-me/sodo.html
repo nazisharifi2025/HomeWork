@@ -5,29 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <script src="sodo.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div
       class="h-screen w-full bg-gradient-to-tr gap-4 from-emerald-500 to-fuchsia-500 flex flex-col justify-center items-center mx-auto"
     >
-      <div class="w-[70%] mx-auto ml-[490px]">
+      <div class="w-[60%] mx-auto ml-[390px]">
         <input
           id="input"
           type="text"
-          class="h-14 w-[300px] border outline-0 rounded-sm relative rounded-r-none border-r-0 border-gray-400"
-          placeholder="Enter a BU"
+          class="h-14 w-[350px] border outline-0 rounded-sm relative rounded-r-none border-r-0 border-gray-400"
+          placeholder="Enter a Text"
         />
         <button
           id="save"
-          class="bg-gray-400 h-14 w-[80px] rounded-sm rounded-l-none text-white absolute"
+          class="bg-gray-400 h-14 w-[100px] rounded-sm rounded-l-none text-white absolute"
         >
           Save
         </button>
       </div>
-      <button id="clickbtn" class="bg-gray-400 h-14 rounded-sm text-white px-5">
+      <button
+        id="clickbtn"
+        class="bg-gray-400 h-14 rounded-sm w-[50%] text-white px-5"
+      >
         Show TEXT
       </button>
-      <div class="h-[300px] w-[50%] px-4 border" id="divs"></div>
+      <div
+        class="min-h-[300px] w-[50%] p-8 border flex-col gap-3 hidden"
+        id="divs"
+      >
+        <button
+          class="float-right bg-gray-400 rounded-2xl h-10 w-12 absolute right-0"
+        >
+          <span class="material-symbols-outlined"> edit </span>
+        </button>
+      </div>
     </div>
   </body>
 </html>
