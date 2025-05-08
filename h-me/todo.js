@@ -26,10 +26,22 @@ function renderTodos() {
     const edeitbtn = document.createElement("butten");
     edeitbtn.textContent = "✏️ Edit";
     edeitbtn.classList.add("btn");
-    edeitbtn.style.marginLeft = "10px";
     edeitbtn.addEventListener("click", () => {
       input.value = item;
       editIndex = index;
     });
+    const deldtbtn = document.createElement("butten");
+    deldtbtn.textContent = "🗑️ Delete";
+    deldtbtn.classList.add("btn2");
+    deldtbtn.addEventListener("click", () => {
+      todo.splice(index, 1);
+      renderTodos();
+    });
+    const contener = document.createElement("div");
+    container.style.marginBottom = "10px";
+    contener.appendChild(edeitbtn);
+    contener.appendChild(deldtbtn);
+    contener.appendChild(h1);
+    divs.appendChild(contener);
   });
 }
