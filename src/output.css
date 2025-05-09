@@ -378,6 +378,9 @@
   .right-48 {
     right: calc(var(--spacing) * 48);
   }
+  .right-72 {
+    right: calc(var(--spacing) * 72);
+  }
   .right-96 {
     right: calc(var(--spacing) * 96);
   }
@@ -389,6 +392,18 @@
   }
   .right-\[35px\] {
     right: 35px;
+  }
+  .right-\[38\%\] {
+    right: 38%;
+  }
+  .right-\[39\%\] {
+    right: 39%;
+  }
+  .right-\[40\%\] {
+    right: 40%;
+  }
+  .right-\[50\%\] {
+    right: 50%;
   }
   .-bottom-20 {
     bottom: calc(var(--spacing) * -20);
@@ -431,6 +446,9 @@
   }
   .-z-0 {
     z-index: calc(0 * -1);
+  }
+  .z-0 {
+    z-index: 0;
   }
   .z-10 {
     z-index: 10;
@@ -1752,6 +1770,20 @@
     &::after {
       content: var(--tw-content);
       color: var(--color-gray-300);
+    }
+  }
+  .hover\:top-14 {
+    &:hover {
+      @media (hover: hover) {
+        top: calc(var(--spacing) * 14);
+      }
+    }
+  }
+  .hover\:right-\[39\%\] {
+    &:hover {
+      @media (hover: hover) {
+        right: 39%;
+      }
     }
   }
   .hover\:h-40 {
