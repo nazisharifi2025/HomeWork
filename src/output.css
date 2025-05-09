@@ -1772,10 +1772,31 @@
       color: var(--color-gray-300);
     }
   }
+  .hover\:top-2 {
+    &:hover {
+      @media (hover: hover) {
+        top: calc(var(--spacing) * 2);
+      }
+    }
+  }
   .hover\:top-14 {
     &:hover {
       @media (hover: hover) {
         top: calc(var(--spacing) * 14);
+      }
+    }
+  }
+  .hover\:right-0 {
+    &:hover {
+      @media (hover: hover) {
+        right: calc(var(--spacing) * 0);
+      }
+    }
+  }
+  .hover\:right-\[3\%\] {
+    &:hover {
+      @media (hover: hover) {
+        right: 3%;
       }
     }
   }
