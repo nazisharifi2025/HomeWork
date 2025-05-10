@@ -5,13 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-hero-pattern h-screen w-full">
     <div
       class="h-screen w-full bg-[url(../poblic/img/img-hero.jpg)] img-clip bg-cover bg-no-repeat"
     >
-      <div class="h-full w-full bg-[rgba(255, 255, 255, 0.7)]"></div>
-      <div class="flex space-x-2 w-full"></div>
+      <div
+        class="h-full w-full bg-[rgba(255, 255, 255, 0.7)] relative z-10"
+      ></div>
     </div>
+    <div class="flex space-x-2 w-[90%]">
+      <img
+        src="../poblic/img/slider-img1 (1).png"
+        class="absolute z-50 top-72 left-36 h-32 w-32"
+        alt=""
+      />
+      <img
+        src="../poblic/img/slider-img4.png"
+        class="absolute z-50 top-[299px] left-[280px] h-32 w-32"
+        alt=""
+      />
+      <img
+        src="../poblic/img/slider-img2.png"
+        class="absolute z-50 top-[299px] right-[320px] h-32 w-32"
+        alt=""
+      />
+      <img
+        src="../poblic/img/slider-img3.png"
+        class="absolute z-50 top-72 right-48 h-32 w-32"
+        alt=""
+      />
+    </div>
+    <div
+      class="h-28 w-48 bg-blue-400 massige absolute text-white top-96 right-0 hidden"
+    >
+      <span class="material-symbols-outlined"> close </span>
+      <p class="text-center">One Messege add</p>
+    </div>
+    <div class=""></div>
   </body>
 </html>
