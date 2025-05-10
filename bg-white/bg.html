@@ -6,20 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
   </head>
-  <body>
+  <body class="">
     <script>
       const body = document.body;
       const div = document.createElement("div");
       const h1 = document.createElement("h1");
-      const tixt = document.createTextNode("Hi there");
-      div.setAttribute("background-color", "blue");
+      const text = document.createTextNode("Hi there");
+      //   div.setAttribute("background-color", "blue");
+      div.classList.add("bg-blue");
       div.classList.add("h-screen");
       div.classList.add("w-full");
       h1.classList.add("text-3xl");
-      h1.classList.add("text-withe");
+      h1.classList.add("text-center");
+      h1.classList.add("text-white");
       body.appendChild(div);
       div.appendChild(h1);
-      h1.appendChild(Text);
+      h1.appendChild(text);
     </script>
   </body>
 </html>
