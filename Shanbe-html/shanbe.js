@@ -4,8 +4,7 @@ const input = document.getElementById("input");
 const div = document.getElementById("div");
 const messege = document.getElementById("mis");
 const close = document.getElementById("close");
-const shoing = document.getElementById("shoing");
-const todo = ["Welcom to page", "Productes", "Happyness"];
+const todo = ["Dinner", "Lunch", "Breakfast"];
 let index = 0;
 function shoingCotes(arr) {
   setInterval(() => {
@@ -27,9 +26,23 @@ butten.addEventListener("click", () => {
     messege.classList.remove("hidden");
     setTimeout(() => {
       messege.classList.add("hidden");
-    }, 15000);
+    }, 3000);
     close.addEventListener("click", () => {
       messege.classList.add("hidden");
     });
+  }
+});
+const ShowBtn = document.getElementById("ShowBtn");
+const buttenshow = document.getElementById("buttenshow");
+ShowBtn.addEventListener("click", () => {
+  buttenshow.innerHTML = "";
+  for (let item of todolist) {
+    const div = document.createElement("div");
+    div.classList.add("hStyle");
+    const h1 = document.createElement("h1");
+    const text = document.createTextNode(item);
+    h1.appendChild(text);
+    buttenshow.appendChild(div);
+    div.appendChild(h1);
   }
 });

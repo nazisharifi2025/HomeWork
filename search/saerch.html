@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css" />
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="relative">
+    <div
+      class="h-screen w-full bg-[url(../poblic/img/background-call-to-action.6a5a5672.jpg)] flex justify-center"
+    >
+      <nav class="h-16 w-full bg-white leading-16 flex justify-between px-5">
+        <img
+          src="../poblic/img/Salient - Tailwind CSS SaaS Marketing Template_files/avatar-5.png"
+          class="h-14 w-14 rounded-full my-1"
+          alt=""
+        />
+        <ul class="flex font-bold space-x-5">
+          <li>home</li>
+          <li>About Us</li>
+          <li>Contuct</li>
+          <li>Shop</li>
+        </ul>
+        <div class="flex space-x-6">
+          <i class="fas fa-search text-2xl py-5" id="search"></i>
+          <i class="fas fa-bars text-2xl py-5"></i>
+        </div>
+      </nav>
+    </div>
+
+    <div
+      id="div"
+      class="h-screen w-full bg-bgcon items-center space-x-1 hidden absolute top-0 justify-center"
+    >
+      <i class="fas fa-times absolute text-3xl top-20 right-32" id="close"></i>
+      <input
+        type="text"
+        placeholder="search"
+        class="w-[70%] h-12 rounded-full border border-black"
+      />
+      <i
+        class="fas fa-search text-2xl h-12 w-14 rounded-full bg-blue-500 text-center py-2"
+      ></i>
+    </div>
+    <script>
+      const search = document.getElementById("search");
+      const div = document.getElementById("div");
+      const close = document.getElementById("close");
+      search.addEventListener("click", () => {
+        div.classList.remove("hidden");
+        div.classList.add("flex");
+        search.style.display = "none";
+      });
+      close.addEventListener("click", () => {
+        div.classList.add("hidden");
+        div.classList.remove("flex");
+        search.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
