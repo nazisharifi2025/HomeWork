@@ -15,6 +15,18 @@
 }
 
 @layer components {
+  .btn-clip {
+    clip-path: polygon(
+      20% 0%,
+      80% 0%,
+      100% 20%,
+      100% 80%,
+      80% 100%,
+      20% 100%,
+      0% 80%,
+      0% 20%
+    );
+  }
   .bg-clip-path {
     clip-path: inset(0 0 0 0 round 5% 20% 0 10%);
   }
