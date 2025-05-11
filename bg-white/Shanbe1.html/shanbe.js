@@ -12,6 +12,6 @@
 //     threshold: 0.3,
 //   }
 // );
-// document
-//   .querySelectorAll(".scroll-animate")
-//   .forEach((el) => observer.observe(el));
+document
+  .querySelectorAll(".scroll-animate")
+  .forEach((el) => observer.observe(el));
