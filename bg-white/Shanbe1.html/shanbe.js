@@ -1,6 +1,6 @@
-// const observer = new IntersectionObserver(
-//   (entres) => {
-//     entres.forEach((entry) => {
+const observer = new IntersectionObserver(
+  (entres) => {
+    entres.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("animate-fade-up-show");
       } else {
