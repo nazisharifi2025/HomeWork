@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css" />
     <link rel="stylesheet" href="../src/output.css" />
   </head>
-  <body class="relative bg-gray-950 text-white">
-    <div class="h-screen w-full mt-3 pt-3">
+  <body class="relative bg-gray-950 text-white font-serif">
+    <div class="h-screen w-full mt-3 pt-5">
       <nav
         class="h-20 border-t-2 border-t-emerald-950 w-[90%] text-2xl mx-auto z-50 bg-transparent leading-16 flex justify-between px-5"
       >
@@ -18,10 +18,10 @@
           alt=""
         />
         <ul class="flex font-bold space-x-5">
-          <li>home</li>
-          <li>About Us</li>
-          <li>Contuct</li>
-          <li>Shop</li>
+          <li class="hover:text-emerald-950">home</li>
+          <li class="hover:text-emerald-950">About Us</li>
+          <li class="hover:text-emerald-950">Contuct</li>
+          <li class="hover:text-emerald-950">Shop</li>
         </ul>
         <div class="flex space-x-6">
           <i class="fas fa-search text-2xl py-5" id="search"></i>
@@ -35,10 +35,13 @@
       />
       <img
         src="../poblic/img/mobile.png"
-        class="absolute right-10 top-56 animate-bounce transition-all duration-1000"
+        class="absolute right-10 top-56 scroll-animate animate-fade-up-init transition-all duration-1000"
         alt=""
       />
-      <h1 class="text-4xl font-serif" id="text"></h1>
+      <h1
+        class="text-5xl w-[60%] font-serif absolute left-12 top-60"
+        id="text"
+      ></h1>
     </div>
     <!--  -->
     <!--  -->
@@ -56,6 +59,74 @@
         class="fas fa-search text-2xl h-12 w-14 rounded-full bg-blue-500 text-center py-2"
       ></i>
     </div>
+    <div class="h-[150vh] flex flex-col gap-8 relative">
+      <div class="w-[50%] mx-auto mt-16">
+        <h1 class="text-3xl text-center">We Offer Top Notch</h1>
+        <p class="w-[70%] mx-auto font-serif text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          est mollitia aut, officiis laborum quas nihil dolor porro voluptate.
+          Eaque, sit magni. Explicabo, pariatur! Ullam veritatis delectus nemo
+          quidem soluta?
+        </p>
+      </div>
+      <img
+        src="../poblic/img/shape-1.png"
+        class="h-60 w-60 absolute top-48 animate-bounce right-24"
+        alt=""
+      />
+      <img
+        src="../poblic/img/shape-2.png"
+        class="h-60 w-60 absolute -bottom-8 animate-bounce left-24"
+        alt=""
+      />
+      <img
+        src="../poblic/img/service-1.jpg"
+        class="h-96 scroll-animate animate-fade-up-init w-80 absolute top-32 left-24"
+        alt=""
+      />
+      <img
+        src="../poblic/img/service-2.jpg"
+        class="h-96 scroll-animate w-80 animate-fade-up-init absolute top-64 left-[40%]"
+        alt=""
+      />
+      <img
+        src="../poblic/img/service-3.jpg"
+        class="h-96 scroll-animate animate-fade-up-init w-80 absolute right-24 bottom-11"
+        alt=""
+      />
+    </div>
+    <div class="h-screen w-full flex mt-20 text-center">
+      <div
+        class="w-[50%] flex flex-col gap-6 font-serif justify-center items-center"
+      >
+        <h1 class="text-5xl w-[90%]">Every Fla vor Tells a Story</h1>
+        <p class="w-[90%] text-[20px]">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ut earum
+          ipsum aut perspiciatis ipsam, quis vitae, ratione sint consequuntur
+          soluta! Ab suscipit dicta temporibus iusto magnam veniam perferendis
+          perspiciatis!
+        </p>
+      </div>
+      <div
+        class="w-[50%] flex flex-col gap-6 font-bold font-serif justify-center items-center"
+      >
+        <img
+          src="../poblic/img/about-banner.jpg"
+          class="w-[80%] relative scroll-animate animate-fade-up-init"
+          alt=""
+        />
+        <img
+          src="../poblic/img/about-abs-image.jpg"
+          class="absolute bottom-0 right-[30%] scroll-animate animate-fade-up-init"
+          alt=""
+        />
+        <img
+          src="../poblic/img/badge-2.png"
+          class="absolute bottom-[500px] right-20 scroll-animate animate-fade-up-init"
+          alt=""
+        />
+      </div>
+    </div>
     <script>
       const search = document.getElementById("search");
       const div = document.getElementById("div");
@@ -70,6 +141,34 @@
         div.classList.remove("flex");
         search.style.display = "block";
       });
+      const text = "Dinner with us Friend or With Family Or .........";
+      let index = 0;
+      function types() {
+        if (index < text.length) {
+          document.getElementById("text").textContent += text.charAt(index);
+          index++;
+          setTimeout(types, 135);
+        }
+      }
+      types();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-fade-up-show");
+            } else {
+              entry.target.classList.remove("animate-fade-up-show"); // اختیاری: وقتی از دید خارج شد حذف کن
+            }
+          });
+        },
+        {
+          threshold: 0.3,
+        }
+      );
+
+      document
+        .querySelectorAll(".scroll-animate")
+        .forEach((el) => observer.observe(el));
     </script>
   </body>
 </html>
