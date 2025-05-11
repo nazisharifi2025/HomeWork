@@ -87,6 +87,16 @@
       74.1% 44.1
     );
   }
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+
+  .animate-fade-up-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
   .h1 {
     @apply h-screen w-full bg-pink-200 text-4xl text-center;
   }
