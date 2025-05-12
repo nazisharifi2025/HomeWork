@@ -4,8 +4,8 @@
 // const play = document.getElementById("play");
 // const stop = document.getElementById("stop");
 // const button = document.getElementById("button");
-// let intervalid;
-// let startTime;
+let intervalid;
+let startTime;
 let currentTime = new Date();
 let minet = currentTime.getMinutes();
 let secound = currentTime.getSeconds();
