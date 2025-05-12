@@ -17,7 +17,7 @@ play.addEventListener("click", () => {
   Watch();
 });
 function Watch() {
-  setInterval(() => {
+  intervalid = setInterval(() => {
     let currentTime = new Date();
     let minet = currentTime.getMinutes();
     let secound = currentTime.getSeconds();
