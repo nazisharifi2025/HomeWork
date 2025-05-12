@@ -27,8 +27,8 @@
 //     document.getElementById("milis").innerHTML = milisecound;
 //   }, 10);
 // }
-// stop.addEventListener("click", () => {
-//   clearInterval(intervalid);
+stop.addEventListener("click", () => {
+  clearInterval(intervalid);
   stop.style.display = "none";
   play.style.display = "block";
 });
