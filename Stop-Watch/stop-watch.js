@@ -8,8 +8,8 @@
 // let startTime;
 // let currentTime = new Date();
 // let minet = currentTime.getMinutes();
-// let secound = currentTime.getSeconds();
-// let milisecound = currentTime.getMilliseconds();
+let secound = currentTime.getSeconds();
+let milisecound = currentTime.getMilliseconds();
 play.addEventListener("click", () => {
   play.style.display = "none";
   startTime = Date.now();
