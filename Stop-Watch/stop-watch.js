@@ -2,7 +2,7 @@
 // // const sec = document.getElementById("sec");
 // // const milis = document.getElementById("milis");
 // const play = document.getElementById("play");
-// const stop = document.getElementById("stop");
+const stop = document.getElementById("stop");
 const button = document.getElementById("button");
 let intervalid;
 let startTime;
