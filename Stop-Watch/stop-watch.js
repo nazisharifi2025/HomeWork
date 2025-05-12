@@ -18,8 +18,8 @@
 // });
 // function Watch() {
 //   setInterval(() => {
-//     let currentTime = new Date();
-//     let minet = currentTime.getMinutes();
+    let currentTime = new Date();
+    let minet = currentTime.getMinutes();
     let secound = currentTime.getSeconds();
     let milisecound = currentTime.getMilliseconds();
     document.getElementById("min").innerHTML = minet;
