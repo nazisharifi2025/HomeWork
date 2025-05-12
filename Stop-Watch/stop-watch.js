@@ -24,9 +24,9 @@
 //     let milisecound = currentTime.getMilliseconds();
 //     document.getElementById("min").innerHTML = minet;
 //     document.getElementById("sec").innerHTML = secound;
-//     document.getElementById("milis").innerHTML = milisecound;
-//   }, 10);
-// }
+    document.getElementById("milis").innerHTML = milisecound;
+  }, 10);
+}
 stop.addEventListener("click", () => {
   clearInterval(intervalid);
   stop.style.display = "none";
