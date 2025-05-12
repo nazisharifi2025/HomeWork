@@ -6,8 +6,8 @@
 // const button = document.getElementById("button");
 // let intervalid;
 // let startTime;
-// let currentTime = new Date();
-// let minet = currentTime.getMinutes();
+let currentTime = new Date();
+let minet = currentTime.getMinutes();
 let secound = currentTime.getSeconds();
 let milisecound = currentTime.getMilliseconds();
 play.addEventListener("click", () => {
