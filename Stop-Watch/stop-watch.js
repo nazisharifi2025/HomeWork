@@ -29,6 +29,6 @@
 // }
 // stop.addEventListener("click", () => {
 //   clearInterval(intervalid);
-//   stop.style.display = "none";
-//   play.style.display = "block";
-// });
+  stop.style.display = "none";
+  play.style.display = "block";
+});
