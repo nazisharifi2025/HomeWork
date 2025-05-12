@@ -592,6 +592,9 @@
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
   }
+  .-mt-3 {
+    margin-top: calc(var(--spacing) * -3);
+  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -773,11 +776,17 @@
   .h-\[140px\] {
     height: 140px;
   }
+  .h-\[140vh\] {
+    height: 140vh;
+  }
   .h-\[150vh\] {
     height: 150vh;
   }
   .h-\[160vh\] {
     height: 160vh;
+  }
+  .h-\[180vh\] {
+    height: 180vh;
   }
   .h-\[200px\] {
     height: 200px;
@@ -1080,6 +1089,9 @@
   }
   .grid-cols-\[1fr_auto\] {
     grid-template-columns: 1fr auto;
+  }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
   .grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -2073,6 +2085,13 @@
       }
     }
   }
+  .hover\:-mt-12 {
+    &:hover {
+      @media (hover: hover) {
+        margin-top: calc(var(--spacing) * -12);
+      }
+    }
+  }
   .hover\:h-40 {
     &:hover {
       @media (hover: hover) {
@@ -2265,6 +2284,28 @@
     &:hover {
       @media (hover: hover) {
         --tw-ring-color: var(--color-slate-500);
+      }
+    }
+  }
+  .group-hover\:hover\:h-\[260px\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        &:hover {
+          @media (hover: hover) {
+            height: 260px;
+          }
+        }
+      }
+    }
+  }
+  .group-hover\:hover\:w-\[260px\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        &:hover {
+          @media (hover: hover) {
+            width: 260px;
+          }
+        }
       }
     }
   }
