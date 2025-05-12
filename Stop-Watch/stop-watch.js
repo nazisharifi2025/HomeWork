@@ -3,7 +3,7 @@
 // // const milis = document.getElementById("milis");
 // const play = document.getElementById("play");
 // const stop = document.getElementById("stop");
-// const button = document.getElementById("button");
+const button = document.getElementById("button");
 let intervalid;
 let startTime;
 let currentTime = new Date();
