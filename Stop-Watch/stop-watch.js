@@ -13,9 +13,9 @@
 // play.addEventListener("click", () => {
 //   play.style.display = "none";
 //   startTime = Date.now();
-//   stop.style.display = "block";
-//   Watch();
-// });
+  stop.style.display = "block";
+  Watch();
+});
 function Watch() {
   setInterval(() => {
     let currentTime = new Date();
