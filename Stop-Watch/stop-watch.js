@@ -22,8 +22,8 @@
 //     let minet = currentTime.getMinutes();
 //     let secound = currentTime.getSeconds();
 //     let milisecound = currentTime.getMilliseconds();
-//     document.getElementById("min").innerHTML = minet;
-//     document.getElementById("sec").innerHTML = secound;
+    document.getElementById("min").innerHTML = minet;
+    document.getElementById("sec").innerHTML = secound;
     document.getElementById("milis").innerHTML = milisecound;
   }, 10);
 }
