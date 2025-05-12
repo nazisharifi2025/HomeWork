@@ -16,8 +16,8 @@
 //   stop.style.display = "block";
 //   Watch();
 // });
-// function Watch() {
-//   setInterval(() => {
+function Watch() {
+  setInterval(() => {
     let currentTime = new Date();
     let minet = currentTime.getMinutes();
     let secound = currentTime.getSeconds();
