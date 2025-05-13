@@ -764,6 +764,9 @@
   .h-\[60\%\] {
     height: 60%;
   }
+  .h-\[60vh\] {
+    height: 60vh;
+  }
   .h-\[70vh\] {
     height: 70vh;
   }

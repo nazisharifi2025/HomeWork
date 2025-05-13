@@ -5,19 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body id="body" class="bg-black text-white">
-    <div class="h-screen w-full flex space-x-5">
+    <button
+      class="bg-white p-4 absolute right-0 top-12 text-black z-50"
+      id="li"
+    >
+      <span class="material-symbols-outlined" style="font-size: 40px">
+        wb_sunny
+      </span>
+    </button>
+    <div class="h-[60vh] w-full flex space-x-5 justify-between py-4 px-4">
       <div
         class="h-[300px] w-[270px] bg-amber-600 relative rounded-2xl shadow-md"
       >
         <img src="../poblic/img/c_1.png" class="h-full w-full" alt="" />
         <div
-          class="w-[85%] h-16 rounded-2xl bg-white absolute -bottom-6 mx-auto ml-5"
+          id=""
+          class="w-[85%] text h-16 rounded-2xl bg-black text-white absolute -bottom-6 mx-auto ml-5"
+        >
+          <h1 class="text-2xl text-center my-3 font-bold">Checken Wings</h1>
+        </div>
+      </div>
+      <div
+        class="h-[300px] w-[270px] bg-amber-600 relative rounded-2xl shadow-md"
+      >
+        <img src="../poblic/img/c_1.png" class="h-full w-full" alt="" />
+        <div
+          id=""
+          class="w-[85%] text h-16 rounded-2xl bg-black text-white absolute -bottom-6 mx-auto ml-5"
+        >
+          <h1 class="text-2xl text-center my-3 font-bold">Checken Wings</h1>
+        </div>
+      </div>
+      <div
+        class="h-[300px] w-[270px] bg-amber-600 relative rounded-2xl shadow-md"
+      >
+        <img src="../poblic/img/c_1.png" class="h-full w-full" alt="" />
+        <div
+          id=""
+          class="w-[85%] text h-16 rounded-2xl bg-black text-white absolute -bottom-6 mx-auto ml-5"
+        >
+          <h1 class="text-2xl text-center my-3 font-bold">Checken Wings</h1>
+        </div>
+      </div>
+      <div
+        class="h-[300px] w-[270px] bg-amber-600 relative rounded-2xl shadow-md"
+      >
+        <img src="../poblic/img/c_1.png" class="h-full w-full" alt="" />
+        <div
+          id=""
+          class="w-[85%] text h-16 rounded-2xl bg-black text-white absolute -bottom-6 mx-auto ml-5"
+        >
+          <h1 class="text-2xl text-center my-3 font-bold">Checken Wings</h1>
+        </div>
+      </div>
+      <div
+        class="h-[300px] w-[270px] bg-amber-600 relative rounded-2xl shadow-md"
+      >
+        <img src="../poblic/img/c_1.png" class="h-full w-full" alt="" />
+        <div
+          id=""
+          class="w-[85%] text h-16 rounded-2xl bg-black text-white absolute -bottom-6 mx-auto ml-5"
         >
           <h1 class="text-2xl text-center my-3 font-bold">Checken Wings</h1>
         </div>
       </div>
     </div>
+    <div class="w-full h-60vh">
+      <div class="h-full w-[60%] rounded-2xl rounded-l-none bg-amber-600"></div>
+    </div>
+    <script>
+      //   const body = document.getElementById("body");
+      //   const li = document.getElementById("li");
+      //   const text = document.querySelectorAll("div.text");
+      //   li.addEventListener("click", () => {
+      // if (body.classList.contains("bg-black")) {
+      //   body.classList.add("bg-white");
+      //   body.classList.remove("bg-black");
+      //   text.classList.remove("bg-black");
+      //   text.classList.add("bg-white");
+      //   text.classList.remove("text-white");
+      //   text.classList.add("text-black");
+      // } else {
+      //   body.classList.add("bg-black");
+      //   body.classList.remove("bg-white");
+      //   text.classList.add("bg-black");
+      //   text.classList.remove("bg-white");
+      //   text.classList.add("text-white");
+      //   text.classList.remove("text-black");
+      // }
+      //   });
+      const texts = document.querySelectorAll("div.text");
+
+      li.addEventListener("click", () => {
+        if (body.classList.contains("bg-black")) {
+          body.classList.add("bg-white");
+          body.classList.remove("bg-black");
+
+          texts.forEach((el) => {
+            el.classList.remove("bg-black");
+            el.classList.add("bg-white");
+            el.classList.remove("text-white");
+            el.classList.add("text-black");
+          });
+        } else {
+          body.classList.add("bg-black");
+          body.classList.remove("bg-white");
+
+          texts.forEach((el) => {
+            el.classList.add("bg-black");
+            el.classList.remove("bg-white");
+            el.classList.add("text-white");
+            el.classList.remove("text-black");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
