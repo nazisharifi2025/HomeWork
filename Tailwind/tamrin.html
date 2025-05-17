@@ -8,10 +8,13 @@
   </head>
   <body>
     <div
-      class="h-screen w-full bg-linear-to-tr from-[#ff80b5] bg-clip to-[#95959e] -transition-x-1/2 flex text-center text-7xl justify-center items-center"
-    >
-      <h1 id="type" class="opacity-100"></h1>
-    </div>
+      id="contener"
+      class="h-screen w-full relative -transition-x-1/2 flex justify-center items-center flex-wrap"
+    ></div>
+    <h1
+      id="type"
+      class="opacity-100 absolute top-[40%] text-center text-5xl left-20"
+    ></h1>
     <script>
       const text =
         "  Every struggle in your life has shaped you into the person . You are today . Be thankful for the hard times , they have made you STRONGER";
@@ -24,6 +27,12 @@
         }
       }
       types();
+      // const contener = document.getElementById("contener");
+      // for (let i = 1; i < 113; i++) {
+      //   const div = document.createElement("div");
+      //   div.classList.add("divh");
+      //   contener.appendChild(div);
+      // }
     </script>
   </body>
 </html>
