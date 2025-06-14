@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <style>
+      .scroll-animate {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .animate-fade-up-show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
   </head>
   <body
     class="bg-gray-700 min-h-screen flex flex-col gap-32 items-center justify-center p-10"
@@ -47,7 +59,7 @@
         entres.forEach(
           (entre) => {
             if (entre.isIntersecting) {
-              entre.target.classList.add("animate-fade-up-show ");
+              entre.target.classList.add("animate-fade-up-show");
             } else {
               entre.target.classList.remove("animate-fade-up-show");
             }
